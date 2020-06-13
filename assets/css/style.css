@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a { 
+  display: inline-block;
+  text-decoration: none; 
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 86%; 
+  margin: 0 auto;
+}
+/*=================================
+  Header styling starts here
+=================================*/
+
+
+
+
+
+
+/*=================================
+  Header styling ends here
+=================================*/  
+
+/*=================================
+  main styling starts here
+=================================*/
+main{
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center; 
+}
+
+form label{
+  font-size: 17px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+form{
+  width: 50%;
+  padding: 30px 50px;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 20px 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+form input,
+form textarea{ width: 75%; }
+
+form div{
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+form div:nth-child(5),
+form div:nth-child(3){
+  margin: 20px 0;
+  display: block;
+  text-align: left;
+}
+
+form div:nth-child(5) input,
+form div:nth-child(3) input{
+  width: auto;
+  height: auto;
+}
+
+form div:nth-child(3) label:first-child{ margin-right: 13%; }
+
+input[type="radio"]{ font-size: 20px; }
+
+input {
+  height: 6vh;
+  padding-left: 10px;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+form textarea {
+  height: 20vh;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 10px 30px;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgba(26,26,0,1);
+  color: rgba(255,255,255,1);
+  font-size: 15px;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.display {
+  width: 70%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.display ul {
+  width: 100%;
+  border-bottom: 1px solid rgba(26,26,0,1);
+  background-color: rgba(26,26,0,0.1);
+}
+
+.display ul:first-child {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color:rgba(26,26,0,1);
+  color: rgba(255,255,255,1);
+}
+
+.display ul:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: none;
+}
+
+.display ul:first-child li {
+  width: 16.29%;
+  box-sizing: border-box;
+}
+
+ul li {
+  width: 16.66%;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.display a {
+  padding: 5px 15px;
+  border-radius: 6px;
+  background-color: rgba(26,26,0,1);
+  color: rgba(255,255,255,1);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.display a:hover,
+form button:hover {
+  box-shadow: 5px 10px 18px #888888;
+  color: rgba(0,0,0,0.9);
+  background-color: rgba(255,255,255,1);
+}
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/ 
+
+
+
+
+
+
+
+ /*=================================
+  footer styling ends here
+================================*/
+
+@media only screen and (max-width: 1024px) {
+  form { width: 70%; }
+
+  .display { width: 95%; }
+  
+  ul li { padding: 10px 10px; }
+}
+
+@media only screen and (max-width: 768px) {
+  form { width: 95%; }
+
+  .display { width: 95%; }
+}
+
+@media only screen and (max-width: 525px) {
+  form {
+    width: 95%;
+    padding: 20px 30px;
+  }
+
+  form div input,
+  form div textarea { width: 70%; }
+}
+
+@media only screen and (max-width: 425px) {
+  form div{
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    text-align: left;
+  }
+
+  form div label,
+  form div input,
+  form div textarea { width: 100%; }
+
+  form div:nth-child(3) label:first-child { margin-right: 5%; }
+
+}

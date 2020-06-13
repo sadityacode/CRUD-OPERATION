@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en"> 
+
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JS QUERY</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+
+</head>
+
+<body>
+  <!--container start-->
+  <div class="container">
+    <!--header section start-->
+    <header>
+    </header>
+    <!--header section end-->
+    <!--main section start-->
+    <main>
+
+      <form>
+      <div>
+        <label>first name:</label> <input type="text" id="name">
+      </div>
+
+      <div>
+      <label>last name:</label> <input type="text" id="sirname">
+      </div>
+
+      <div>
+      <label>gender:</label> 
+      <input type="radio" name="gender" id="male" value="Male"><label for="male">male</label>
+      <input type="radio" name="gender" id="female" value="Female"><label for="female">female</label>
+      </div>
+
+      <div>
+      <label>address:</label> <textarea id="address"></textarea>
+      </div>
+
+      <div>
+      <input type="checkbox" id="checkbox"> <label for="checkbox">terms and conditions</label>
+      </div>
+
+      <button id="submit" title="Submit">submit</button>
+      <button id="cancel" title="cancel">cancel</button>
+      </form>
+
+      <div class="display">
+        <ul class="row">
+          <li>name</li>
+          <li>last name</li>
+          <li>gender</li>
+          <li>address</li>
+          <li>edit</li>
+          <li>delete</li>
+        </ul>
+      </div>
+
+    </main>
+    <!--main section end-->
+
+    <!--footer section start-->
+    <footer>      
+
+    </footer>
+    <!--footer section end-->
+
+  </div>
+  <!--container end-->
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
